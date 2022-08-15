@@ -1,7 +1,8 @@
 <?php
 
-    $conn = new mysqli("db", "Fortuneod", "seyejames@123", "php_docker");
+//This is just a sample php connection to the DB and pulling of data to ensure all works fine.
 
+    $conn = new mysqli("db", "Fortuneod", "seyejames@123", "php_docker");
 
     $s="SELECT * FROM `expenses`";
     $r=$conn->query($s);
@@ -11,6 +12,8 @@
     }
 
     echo "<hr/>";
+
+    //The part below enables to see Information about PHP
 
     phpinfo();
 
